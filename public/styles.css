@@ -1,0 +1,301 @@
+//*  JavaScript 6th Edition v 1.16
+ 
+    Large format style sheet
+
+    Filename: project.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: #4593C4;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+   position: relative;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: EFE0B9;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* container */
+#container {
+   background: #0F4364;
+}
+
+/* page header */
+header {
+   background: white;
+   font-size: 48px;
+   float: left;
+}
+
+/* navigation */
+nav {
+   font-size: 16px;
+   font-family: "Indie+Flower", cursive;
+   padding-top: 142px;
+   background: white;
+   float: right;
+   width: 740px;
+}
+
+nav ul {
+   text-align: center;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 8px 15px;
+   margin: 0 3px;
+   background: #94CEF2;
+   -moz-border-radius-topleft: 7px;
+   -moz-border-radius-topright: 7px;
+   -webkit-border-top-left-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   -webkit-box-shadow: 2px -2px 0px #94CEF2,
+                       2px 0px 0px #94CEF2;
+   -moz-box-shadow:    2px -2px 0px #94CEF2,
+                       2px 0px 0px #94CEF2;
+   box-shadow:         2px -2px 0px #94CEF2,
+                       2px 0px 0px #94CEF2;
+}
+
+nav ul #currentpage {
+   background: #94CEF2;
+   color: white;
+}
+
+/* main content */
+article {
+   width: 640px;
+   float: right;
+   font-family: "Indie+Flower", cursive;
+   text-align: left;
+   background: white;
+   padding: 10px;
+   border-top: 1px solid #94CEF2;
+}
+
+article h2 {
+   font-family: "Indie+Flower", cursive;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 6px;
+}
+
+article p {
+   margin-bottom: 6px;
+   line-height: 1.2em;
+}
+
+article table {
+   margin: 0 auto;
+}
+
+article th, article td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+article th {
+   font-weight: bold;
+   background: #EFE0B9;
+}
+
+/* form */
+form {
+   width: 560px;
+   margin: 0 auto;
+}
+
+form fieldset{
+   border: none; 
+   background: #EFE0B9;
+   position: relative;
+}
+
+form legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: 10px;
+}
+
+form legend span {
+   position: relative;
+   top: 20px;
+}
+
+form label {
+   display: block;
+   font-size: 1.2em;
+   width: 480px;
+   text-align: right;
+}
+form label p {
+   float: left;
+   width: 100%;
+   text-align: right;
+}
+
+form label p:nth-child(2) {
+   font-size: 0.8em;
+}
+
+form input {
+   padding: 1%;
+   background: tan;
+   color: #BBB;
+   border: none;
+   font: normal 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+   float: right;
+   clear: both;
+   width: 120px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   position: relative;
+   top: -0.4em;
+}
+
+input, label {
+   position: relative;
+   line-height: 1.2em;
+   display: block;
+}
+
+fieldset.checks input {
+   float: left;
+   clear: left;
+   margin-right: 5px;
+   margin-left: 5em;
+   font-size: 18px;
+}
+
+fieldset.checks label {
+   line-height: 1.2em;
+   margin-bottom: 4px;
+}
+
+fieldset.text label {
+   width: 10em;
+   text-align: right;
+   float: left;
+   clear: left;
+   margin: 5px 10px 0 0;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+fieldset.text input {
+   margin: 7px 5px 0 0;
+}
+
+input[type=button] {
+   margin: 15px auto 0;
+   font-size: 16px;
+   background: rgb(202,230,233);
+   width: 9em;
+}
+
+p.errorMsg {
+   display: none;
+   color: red;
+   text-align: center;
+}
+form input[type="checkbox"] {
+   position: static;
+}
+
+/* sidebar */
+aside {
+   float: left;
+   color: #EFE0B9;
+   top: 190px;
+   padding: 30px;
+}
+
+aside #estimate {
+   font-weight: bold;
+}
+
+/* footer */
+footer {
+   background: white;
+   width: 100%;
+   clear: both;
+   font-size: 14px;
+   padding: 10px;
+}
+
+footer p {
+   text-align: center;
+}
